@@ -1,4 +1,26 @@
-{
-    "name": "Luke Murdock",
-    "id": "1"
-}
+[
+    {
+        "id": 1,
+        "name": "Milk Duds",
+        "age": 60,
+        "favourite past time": "Eating one's self"
+    },
+    {
+        "id": 2,
+        "name": "Candy Man",
+        "age": 20,
+        "favourite past time": "Driving windowless vans around"
+    },
+    {
+        "id": 3,
+        "name": "Jimmy Janga",
+        "age": 47,
+        "favourite past time": "Toppling over"
+    },
+    {
+        "id": 4,
+        "name": "Jerry Springer",
+        "age": 72,
+        "favourite past time": "Breaking up families"
+    }
+]

@@ -1,24 +1,7 @@
-const People = require('../models/person');
-
-exports.index = async (req, res, next) => {
-    try {
-        const peoples = await People.find();
-        res.status(200).json(peoples);
-    } catch (error) {
-        next(error);
-    }
-};
-
-exports.show = async (req, res, next) => {
-    try {
-        const peoples = await People.findById(req.params.id);
-        res.status(200).json(peoples);
-    } catch (error){
-        next(error);
-    }
-};
+const people = require('../people.json');
 
 exports.index = (_, res) => {
+    console.log(people);
     res.status(200).json([
         {
             path: '/person',
@@ -33,4 +16,21 @@ exports.index = (_, res) => {
             description: 'Returns the person with the specified ID'
         }
     ]);
+};
+
+exports.show = async (_, res, next) => {
+    try{  
+        res.status(200).json(people);
+    }catch (error){
+        next(error);
+    }
+};
+
+exports.here = async (_, res, next) => {
+    try {
+        
+        res.status(200).json(People);
+    } catch (error){
+        next(error);
+    }
 };
