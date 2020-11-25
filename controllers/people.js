@@ -29,7 +29,7 @@ exports.show = async (_, res, next) => {
 exports.here = async (_, res, next) => {
     try {
         
-        res.status(200).json(People);
+        res.status(200).json(people);
     } catch (error){
         next(error);
     }
